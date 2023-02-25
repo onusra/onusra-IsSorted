@@ -1,3 +1,4 @@
+import java.util.*;
 public class IsSorted {
     /**
      * Return true if arr is sorted, smallest to largest, false otherwise.
@@ -6,7 +7,18 @@ public class IsSorted {
      * @param arr an int array
      * @return true if arr is sorted (all the numbers are in order). false if arr is not sorted.
      */
+    public static void main(String [] ars){
+
+    }
     public boolean checkSort(int[] arr){
-        return false;
+        int i;
+        int j = 1;
+        for(i = 0 ; i < arr.length - 1; i++, j++){
+            if((arr[i] > arr[j]) && (j < arr.length -1 )){
+                return false;
+            }
+
+        }
+        return true;
     }
 }
