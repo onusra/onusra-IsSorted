@@ -10,6 +10,8 @@ public class IsSorted {
     public static void main(String [] ars){
 
     }
+
+    
     public boolean checkSort(int[] arr){
         int i;
         int j = 1;
